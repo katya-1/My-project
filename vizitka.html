@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8"/>
+		<title>Визитка | Булгак Екатерина</title>
+		<style type="text/css">	
+			#content-vizitka{
+				display: grid;
+				margin: 5px 33%;
+			}		
+			.inner-table {
+				font-family: Arial; 
+				width: 620px;
+			}
+			.td {
+				padding: 18px 3px 19px 3px;
+    			border: 1px solid #000;
+			}
+			h1 {
+				margin: 10px 40px 0 0; 
+				font-size: 50px;
+				text-align: right;
+			}
+			h3 {
+				margin: 20px 40px 15px 0;
+				font-size: 20px;
+				text-align: right;
+				}
+			img {
+				width: 30px;
+				margin: 3px;
+			}
+			a {
+				color:#000;
+			}	
+			td {
+				empty-cells: hide;
+				font-size: 18px;
+			}
+			.lines {
+				position: relative;
+			}
+			.lines:after,
+			.lines:before {
+				content: "";
+				position: absolute;
+				background-color: #000;
+			}
+			.lines:after {
+				height: 150px;
+				width: 1px;
+			}
+			.lines:before {
+				height: 1px;
+				width: 450px;
+			}
+			.title.lines:after {
+				right: 30px;
+				top: -20px;
+			}
+			.title.lines:before {
+				top: 0px;
+				right: -5px;
+			}
+			.contact.lines:after {
+				left: 40px;
+				bottom: -20px;
+			}
+			.contact.lines:before {
+				bottom: 0px;
+				left: -4px;
+			}
+			.semi {
+				opacity: 0;
+			}
+			.header {
+				border: 1px solid #000;
+				background-color: #0a3371; 
+			}
+			td.head	{
+				text-align: center;
+				font-size: 20px;
+			}
+			a.group{
+				text-decoration: none;
+				color:#fff;
+			}
+			a.group:hover{
+				color:#000;
+			}
+			a.glav{
+				text-decoration: none;
+				color:#e8974f;
+			}
+			a.glav:hover{
+				color:#000;
+			}
+
+			/*GRID*/
+			.header.grid{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				margin: 0;
+				padding: 3px 0;
+				list-style: none;
+			}
+			.header.grid .head{
+				text-align: center;
+				font-size: 20px;
+			}
+			.table {
+				border: 1px solid grey;
+				margin: 5px 0 0 0;
+			}
+			.inner-table.grid {
+				display: grid;
+				grid-template-rows: auto auto auto auto;
+				padding: 18px 3px 19px 3px;
+			}
+			.contact.grid {
+				display: grid;
+				grid-template-columns: 60px auto;
+				margin: 0 0 5px 0;
+				align-items: center;
+			}
+			.contact.grid.lines,
+			.contact p {
+				margin: 0;
+				font-size: 18px;
+			}
+			.contact .phone {
+				text-decoration: none;
+			}
+			</style>
+		</head>
+		<body>
+			<div id="content-vizitka">
+			<ul class="header grid">
+				<li class="head"><a href="index.html" class="group">Главная</a></li>
+				<li class="head"><a href="works.html" class="group">Работы</a></li>
+				<li class="head"><a href="#" class="glav">Контакты</a></li>
+			</ul>
+			<div class="table">
+				<div class="inner-table grid">
+					<div class="title lines">
+						<h1>Булгак Екатерина</h1>
+						<h3 >cтудентка БГУ</h3>
+					</div>
+					<div class="contact grid">
+						<img src="images/img/map.png" alt="icon">
+						<p>Минск, ул.Ленина 5</p>
+					</div>
+					<div class="contact grid">
+						<img src="images/img/phone.png" alt="icon">
+						<p><a href="tel:+37533584091" class="phone">+375(33)584091</a></p>
+					</div>
+					<div class="contact grid lines">
+						<img src="images/img/email.png" alt="icon">
+						<p><a href="mailto:">katya@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>	
+</html>
