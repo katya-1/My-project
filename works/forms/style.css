@@ -1,0 +1,47 @@
+/* CSS Document*/
+*{
+margin: 0;
+}
+body {
+margin: 0;
+padding: 0;
+background: #fff;
+color: #000; 
+font-family: "Arial"; 
+}
+#container {
+margin: 5px auto;
+padding: 10px 0;
+width: 20%; 
+background: #CCFFCC;
+}
+#header {
+border-radius: 15px; 
+background: #009933;
+margin: 0px 10px;
+} 
+h1 {
+font-size: 20px;	
+text-align: center;
+}
+fieldset {
+margin: 10px 20px;	
+border-width: 2px;
+border-color: #009933;
+border-style: solid;	
+}
+input {
+margin: 0 5px;
+}
+img {
+margin: 0 30px 5px;	
+}
+select {
+margin: 0 5px;	
+}
+.knopka {
+margin: 13px 0px 5px ;
+}
+p {
+text-align: center;	
+}
